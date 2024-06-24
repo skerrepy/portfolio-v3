@@ -11,7 +11,6 @@ import { twMerge } from "tailwind-merge";
 import { useState, useEffect, useRef } from "react";
 import { cn } from "@/utils/cn";
 import { motion } from "framer-motion";
-import WavingHand from "@/components/ui/waving-hand";
 export default function Home() {
   type socialMediaPreviewType = {
     icon: React.ReactNode;
@@ -59,7 +58,7 @@ export default function Home() {
     },
   ];
   const [currentSection, setCurrentSection] = useState<string | null>(null);
-  const sectionRefs = useRef<Array<HTMLElement | null>>([]);
+  const sectionRefs = useRef<Array<HTMLDivElement >|any>([]);
 
   useEffect(() => {
     const options: IntersectionObserverInit = {
@@ -77,7 +76,7 @@ export default function Home() {
       });
     }, options);
 
-    sectionRefs.current.forEach((ref) => {
+    sectionRefs.current.forEach((ref: Element) => {
       if (ref) {
         observer.observe(ref);
       }
