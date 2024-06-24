@@ -6,7 +6,7 @@ import { LinkPreview } from "./link-preview";
 type ExperienceCardProps = {
   from: string;
   to?: string;
-  url?: string|null;
+  url?: string|any;
   role: string;
   company: string;
   technologies?: string[];
