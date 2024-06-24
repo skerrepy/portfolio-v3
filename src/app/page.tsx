@@ -246,7 +246,7 @@ const professional_experience = [
     company: "",
     description:
       "As a freelance software developer, I specialize in providing tailored solutions to clients seeking custom software development. I leverage my expertise to deliver high-quality code and responsive applications, meeting diverse project requirements and deadlines. With a commitment to client satisfaction, I ensure clear communication and collaborate closely to translate ideas into functional, scalable software solutions.",
-    url: window?.location?.href,
+    url:typeof window !== 'undefined'&& window?.location?.href,
   },
   {
     technologies: [
