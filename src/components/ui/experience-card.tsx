@@ -77,7 +77,7 @@ const ExperienceCard = ({
           <ul className="mt-2 flex flex-wrap">
             {technologies?.map((tech) => (
               <li className="mr-1.5 mt-2">
-                <Pill name={tech} />
+                <Pill key={tech} name={tech} />
               </li>
             ))}
           </ul>
