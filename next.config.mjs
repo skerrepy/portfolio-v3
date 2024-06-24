@@ -4,6 +4,8 @@ const nextConfig = {
         domains: ['images.unsplash.com',      "api.microlink.io"
     ]
     },
+    basePath: "/",
+
     output: "export",  // <=== enables static exports
     reactStrictMode: true,
 };
