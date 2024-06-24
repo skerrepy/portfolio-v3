@@ -107,7 +107,7 @@ export default function Home() {
             <nav className="nav hidden lg:block" aria-label="Link scrollers">
               <ul className="mt-16 w-max">
                 {site_scrolling_points.map((scp) => (
-                  <li>
+                  <li key={`link-${scp.id}`}>
                     <Link
                       className="group active flex items-center py-3 "
                       href={`#${scp.id}`}
@@ -152,7 +152,7 @@ export default function Home() {
             id="about"
             className="mb-14 scroll-mt-16 md:mb-24 lg:mb-30 lg:scroll-mt-20"
           >
-            <p className="mb-4">
+            <div className="mb-4">
               Hey there!{" "}
               👋
               I'm a passionate full stack developer who caught the web
@@ -175,7 +175,7 @@ export default function Home() {
               . When I'm not diving into code, you'll find me exploring new
               destinations or taking leisurely strolls, soaking in the world
               beyond the screen.
-            </p>
+            </div>
 
             <Link className="group underline underline-offset-4 transition ease-in-out duration-400 hover:underline-offset-8 group/link" target="_blank" href="/Omar Hanafi's CV.pdf" >
               View My CV  <svg
@@ -206,6 +206,7 @@ export default function Home() {
                   {section.content.map((item, index) => (
                     <div key={`content-${index}`} className="mb-20">
                       <ExperienceCard
+                      
                         technologies={item.technologies}
                         from={item.from}
                         to={item.to}
@@ -246,7 +247,7 @@ const professional_experience = [
     company: "",
     description:
       "As a freelance software developer, I specialize in providing tailored solutions to clients seeking custom software development. I leverage my expertise to deliver high-quality code and responsive applications, meeting diverse project requirements and deadlines. With a commitment to client satisfaction, I ensure clear communication and collaborate closely to translate ideas into functional, scalable software solutions.",
-    url: window.location.href,
+    url: window?.location?.href,
   },
   {
     technologies: [

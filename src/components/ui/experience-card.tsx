@@ -76,8 +76,8 @@ const ExperienceCard = ({
           <p className="mt-2 group-hover:text-zinc-50 text-sm leading-normal">{description}</p>
           <ul className="mt-2 flex flex-wrap">
             {technologies?.map((tech) => (
-              <li className="mr-1.5 mt-2">
-                <Pill key={tech} name={tech} />
+              <li key={tech} className="mr-1.5 mt-2">
+                <Pill  name={tech} />
               </li>
             ))}
           </ul>
