@@ -155,9 +155,9 @@ export default function Home() {
             <div className="mb-4">
               Hey there!{" "}
               👋
-              I'm a passionate full stack developer who caught the web
+              I&apos;m a passionate full stack developer who caught the web
               development bug at 16 when I created my first website out of sheer
-              curiosity — and I've been hooked ever since! I've had the pleasure
+              curiosity — and I&apos;ve been hooked ever since! I&apos;ve had the pleasure
               of working with a{" "}
               <LinkPreview
                 className="font-bold text-black-600"
@@ -172,7 +172,7 @@ export default function Home() {
               >
                 tutoring
               </LinkPreview>
-              . When I'm not diving into code, you'll find me exploring new
+              . When I&apos;m not diving into code, you&apos;ll find me exploring new
               destinations or taking leisurely strolls, soaking in the world
               beyond the screen.
             </div>
